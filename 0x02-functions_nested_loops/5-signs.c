@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- *print_sign - Entry point
- *return: 00
+ * print sign: main function
+ * int n = used as the main var
  */
 
 int print_sign(int n)
