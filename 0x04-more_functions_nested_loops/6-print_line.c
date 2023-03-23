@@ -2,7 +2,7 @@
 
 /**
  * print_line - prints new line when run
- *@n: number of lines printed in _ character
+ *@n: number of lines printed in _ char
  */
 
 void print_line(int n)
@@ -18,6 +18,7 @@ void print_line(int n)
 		{
 			_putchar ('_');
 		}
+	}
 
 		_putchar ('\n');
 }
