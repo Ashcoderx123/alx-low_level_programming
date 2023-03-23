@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- * 
- * is _isdigit - checks if the var is digit
+ * _isdigit - checks if the var is digit
  * @c: is the character to be checked
  * Return: 1 if digit else return 0
  */
