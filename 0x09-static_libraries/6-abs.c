@@ -1,27 +1,15 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * *_strstr - locates a substring
- * @haystack: string to search in
- * @needle: substring to look for
- *
- * Return: pointer to the beginning of the located substring
- * or NULL if the substring is not found
+ * _abs - computes the absolute value of an integer
+ * @n: the int to check
+ * Return: the absolute value of int
  */
-char *_strstr(char *haystack, char *needle)
+int _abs(int n)
 {
-	int i, j;
-
-	for (i = 0; haystack[i] != '\0'; i++)
+	if (n >= 0)
 	{
-		for (j = 0; needle[j] != '\0'; j++)
-		{
-			if (haystack[i + j] != needle[j])
-				break;
-		}
-		if (!needle[j])
-			return (&haystack[i]);
+		return (n);
 	}
-	return (NULL);
+	return (-n);
 }
