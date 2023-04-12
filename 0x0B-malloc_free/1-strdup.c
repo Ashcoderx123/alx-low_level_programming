@@ -28,9 +28,9 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	while (str[i] = newstr[i] != '\0')
+	while ((str[i] = newstr[i]) != '\0')
 	{
-		i++
+		i++;
 	}
 
 	return (newstr);
