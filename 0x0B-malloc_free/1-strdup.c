@@ -12,12 +12,12 @@
 char *_strdup(char *str)
 {
 	char *newstr;
-	int len, i = 0;
+	unsigned int len, i = 0;
 
 	if (str == NULL)
 		return (NULL);
 
-	while (str[len] != '\0')
+	while (str[len])
 	{
 		len++;
 	}
@@ -28,10 +28,10 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	for (i = 0; str[i]; i++)
+	while (str[i] = newstr[i] != '\0')
 	{
-		newstr[i] = str[i];
+		i++
 	}
 
-	return newstr;
+	return (newstr);
 }
