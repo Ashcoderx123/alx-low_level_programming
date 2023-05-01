@@ -11,14 +11,12 @@
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
 	listint_t *last;
+	listint_t *cur = *head;
 
 	last = (listint_t *)malloc(sizeof(listint_t));
 
-	if (last == NULL)
-	{
-		printf("Error Allocating Memory\n");
+	if (!last)
 		return (NULL);
-	}
 
 	last->n = n;
 	last->next = NULL;
@@ -28,17 +26,12 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 		*head = last;
 		return (last);
 	}
-	else
-	{
-		listint_t *cur = *head;
 
-		while (cur->next != NULL)
-		{
-			cur = cur->next;
-		}
-	}
-		cur->next = last;
 
+	while (cur->next != NULL)
+		cur = cur->next;
+
+	cur->next = last;
 
 	return (last);
 }
