@@ -21,13 +21,15 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	}
 
 	last->n = n;
-	last->next = NULL;	
+	last->next = NULL;
+
 	if (*head == NULL)
 	{
 		*head = last;
+		return (last);
 	}
-	else
-	{
+
+
 		listint_t *cur = *head;
 
 		while (cur->next != NULL)
@@ -36,7 +38,6 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 		}
 
 		cur->next = last;
-	}
 
 
 	return (last);
